@@ -1,8 +1,8 @@
 # Details
 
-Testing version available soon:
+Testing version available soon.
 
-[![Google Play](GooglePlay_Badge_Web_color_English.png)](https://play.google.com/apps/testing/com.pseudofish.zoneslider)
+[<img src="GooglePlay_Badge_Web_color_English.png" width="180">](https://play.google.com/apps/testing/com.pseudofish.zoneslider)
 
 # Legal
 
