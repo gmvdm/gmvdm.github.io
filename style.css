@@ -287,25 +287,52 @@
     width: auto;
   }
 
-  .coming-soon-ios {
-    display: flex;
+  .app-store-btn {
+    display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    padding: 0.6rem 1.2rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.9rem;
-    color: var(--text-secondary);
+    background: #020617;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    height: 52px;
+    padding-inline: 1.25rem;
+    border-radius: 7px;
+    color: var(--text-primary);
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 
-  .coming-soon-ios svg {
-    color: var(--text-secondary);
-    opacity: 0.8;
+  .app-store-btn:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 12px rgba(255, 255, 255, 0.05);
   }
 
-  .coming-soon-ios span {
+  .apple-icon {
+    color: var(--color-white);
+    flex-shrink: 0;
+  }
+
+  .btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.15;
+    text-align: left;
+  }
+
+  .btn-subtitle {
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
     font-weight: 500;
+  }
+
+  .btn-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-white);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
 
   /* --- Mockup placeholder --- */
@@ -508,7 +535,7 @@
 
 /* --- Forced Colors Mode / High Contrast Fallback --- */
 @media (forced-colors: active) {
-  .feature-card, .coming-soon-ios {
+  .feature-card, .app-store-btn {
     border: 1px solid CanvasText !important;
   }
   .logo-title, .gradient-text {
